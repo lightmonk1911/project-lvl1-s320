@@ -2,7 +2,16 @@
   "name": "hexlet_pr_1_second_attempt",
   "version": "1.1.1",
   "description": "Here you can find the kit of brain-games playing from bash.",
-  "keywords": ["Mind", "brain", "neurons", "memory", "games", "timekiller", "enjoy", "fun"],
+  "keywords": [
+    "Mind",
+    "brain",
+    "neurons",
+    "memory",
+    "games",
+    "timekiller",
+    "enjoy",
+    "fun"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
@@ -30,6 +39,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0"
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0"
   }
 }
