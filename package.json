@@ -1,8 +1,8 @@
 {
-  "name": "igor_hexlet_project_n1",
+  "name": "hexlet_pr_1_second_attempt",
   "version": "1.0.0",
-  "description": "hexlet_project_1",
-  "main": "brain-games.js",
+  "description": "hexlet_project_second_attempt",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
@@ -15,12 +15,13 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
-  },
-  "files": [
+     "brain-games": "dist/bin/brain-games.js"
+   },
+   "files": [
     "dist"
   ]
 }
