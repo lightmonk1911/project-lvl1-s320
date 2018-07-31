@@ -1,7 +1,16 @@
 # project-lvl1-s320
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability">
-  <img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" />
-</a>
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage">
-  <img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" />
-</a>
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/9a33fa847d65a32ef1bd/maintainability)](https://codeclimate.com/github/lightmonk1911/project-lvl1-s320/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9a33fa847d65a32ef1bd/test_coverage)](https://codeclimate.com/github/lightmonk1911/project-lvl1-s320/test_coverage)
+
+## Setup
+
+```sh
+$ make install
+```
+
+## Run tests
+
+```sh
+$ make test
+```
