@@ -24,6 +24,10 @@
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/lightmonk1911/project-lvl1-s320.git"
+  },
   "files": [
     "dist"
   ],
