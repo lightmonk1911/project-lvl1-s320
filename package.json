@@ -1,6 +1,6 @@
 {
   "name": "hexlet_pr_1_second_attempt",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Here you can find the kit of brain-games playing from bash.",
   "keywords": "Mind, brain, neurons, memory, games, timekiller, enjoy, fun",
   "scripts": {
@@ -19,9 +19,12 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "bin": {
-     "brain-games": "dist/bin/brain-games.js"
-   },
-   "files": [
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
