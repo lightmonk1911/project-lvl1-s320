@@ -22,5 +22,5 @@ export default (playerName) => {
     }
     score += 1;
   }
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };
