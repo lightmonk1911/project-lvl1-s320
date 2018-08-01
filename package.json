@@ -22,11 +22,12 @@
   "author": "Babenkov_Igor",
   "license": "ISC",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/lightmonk1911/project-lvl1-s320.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lightmonk1911/project-lvl1-s320.git"
   },
   "files": [
     "dist"
