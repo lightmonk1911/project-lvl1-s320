@@ -6,7 +6,7 @@ export default (playerName) => {
   const round = () => {
     const num = Math.floor(Math.random() * 100);
     const correctAnswer = num % 2 === 0 ? 'yes' : 'no';
-    const answer = readlineSync.question(`Question: ${num}`);
+    const answer = readlineSync.question(`Question: ${num}\n`);
     if (answer === correctAnswer) {
       console.log('Correct!');
       return true;
@@ -16,7 +16,7 @@ export default (playerName) => {
     return false;
   };
 
-  while (score <= 3) {
+  while (score < 3) {
     if (!round()) {
       return;
     }
