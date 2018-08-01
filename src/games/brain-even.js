@@ -11,7 +11,7 @@ export default (playerName) => {
       console.log('Correct!');
       return true;
     }
-    console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
       Let's try again, ${playerName}!`);
     return false;
   };
