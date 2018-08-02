@@ -1,9 +1,9 @@
 import answerGame from '../gameEngines/AnswerGame';
+import { random } from '..';
 
 const rules = 'What is the result of the expression?';
 
 const questionPair = () => {
-  const random = (min = 0, max = 100) => Math.floor(Math.random() * max - min + 1);
   const arithmetic = [
     ['+', (a, b) => a + b],
     ['-', (a, b) => a - b],

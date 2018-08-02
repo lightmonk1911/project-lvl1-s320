@@ -1,4 +1,5 @@
 import answerGame from '../gameEngines/AnswerGame';
+import { random } from '..';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 const gcd = (a, b) => {
@@ -12,7 +13,6 @@ const gcd = (a, b) => {
 };
 
 const questionPair = () => {
-  const random = (min = 0, max = 100) => Math.floor(Math.random() * max - min + 1);
   const a = random();
   const b = random();
   const question = `${a} ${b}`;
