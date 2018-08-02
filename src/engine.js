@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
 import { askName, hello } from '.';
 
-export default (rules, getQestionAndAnswer) => {
+export default (description, getQestionAndAnswer) => {
   const numOfRounds = 3;
 
   hello();
-  console.log(rules);
+  console.log(description);
   const playerName = askName();
 
   for (let i = 0; i < numOfRounds; i += 1) {
