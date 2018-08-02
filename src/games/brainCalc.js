@@ -1,6 +1,8 @@
-import readlineSync from 'readline-sync';
+import answerGame from '../gameEngines/AnswerGame';
 
-export default (success, fail) => {
+const rules = 'What is the result of the expression?';
+
+const questionPair = () => {
   const random = (min = 0, max = 100) => Math.floor(Math.random() * max - min + 1);
   const arithmetic = [
     ['+', (a, b) => a + b],
@@ -11,13 +13,11 @@ export default (success, fail) => {
   const b = random();
   const operation = arithmetic[random(0, 2)];
   const [sign, func] = operation;
-  const expression = `${a} ${sign} ${b}`;
+  const question = `${a} ${sign} ${b}`;
   const correctAnswer = func(a, b).toString();
-  const answer = readlineSync.question(`Question: ${expression}\n`);
-  if (answer === correctAnswer) {
-    success(answer, correctAnswer);
-    return true;
-  }
-  fail(answer, correctAnswer);
-  return false;
+  return [question, correctAnswer];
+};
+
+export default () => {
+  answerGame(rules, questionPair);
 };

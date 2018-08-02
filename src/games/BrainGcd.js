@@ -1,5 +1,6 @@
-import readlineSync from 'readline-sync';
+import answerGame from '../gameEngines/AnswerGame';
 
+const rules = 'Find the greatest common divisor of given numbers.';
 const gcd = (a, b) => {
   const isCommonDivisor = (div, x = a, y = b) => x % div === 0 && y % div === 0;
   const [min] = [a, b].sort();
@@ -10,18 +11,15 @@ const gcd = (a, b) => {
   return min / i;
 };
 
-export default (success, fail) => {
+const questionPair = () => {
   const random = (min = 0, max = 100) => Math.floor(Math.random() * max - min + 1);
   const a = random();
   const b = random();
-
   const question = `${a} ${b}`;
   const correctAnswer = gcd(a, b).toString();
-  const answer = readlineSync.question(`Question: ${question}\n`);
-  if (answer === correctAnswer) {
-    success(answer, correctAnswer);
-    return true;
-  }
-  fail(answer, correctAnswer);
-  return false;
+  return [question, correctAnswer];
+};
+
+export default () => {
+  answerGame(rules, questionPair);
 };
