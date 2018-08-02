@@ -1,5 +1,5 @@
 import answerGame from '../engine';
-import random from '../utils';
+import generateNumber from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const gcd = (a, b) => {
@@ -13,8 +13,8 @@ const gcd = (a, b) => {
 };
 
 const getQestionAndAnswer = () => {
-  const a = random();
-  const b = random();
+  const a = generateNumber();
+  const b = generateNumber();
   const question = `${a} ${b}`;
   const correctAnswer = gcd(a, b).toString();
   return [question, correctAnswer];

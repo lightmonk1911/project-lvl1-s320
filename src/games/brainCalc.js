@@ -1,5 +1,5 @@
 import answerGame from '../engine';
-import random from '../utils';
+import generateNumber from '../utils';
 
 const description = 'What is the result of the expression?';
 
@@ -9,9 +9,9 @@ const getQestionAndAnswer = () => {
     ['-', (a, b) => a - b],
     ['*', (a, b) => a * b],
   ];
-  const a = random();
-  const b = random();
-  const operation = arithmetic[random(0, 2)];
+  const a = generateNumber();
+  const b = generateNumber();
+  const operation = arithmetic[generateNumber(0, 2)];
   const [sign, func] = operation;
   const question = `${a} ${sign} ${b}`;
   const correctAnswer = func(a, b).toString();
