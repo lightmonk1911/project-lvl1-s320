@@ -1,7 +1,7 @@
-import answerGame from '../gameEngines/AnswerGame';
-import { random } from '..';
+import answerGame from '../engine';
+import random from '../utils';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 const gcd = (a, b) => {
   const isCommonDivisor = (div, x = a, y = b) => x % div === 0 && y % div === 0;
   const [min] = [a, b].sort();
@@ -12,7 +12,7 @@ const gcd = (a, b) => {
   return min / i;
 };
 
-const questionPair = () => {
+const getQestionAndAnswer = () => {
   const a = random();
   const b = random();
   const question = `${a} ${b}`;
@@ -21,5 +21,5 @@ const questionPair = () => {
 };
 
 export default () => {
-  answerGame(rules, questionPair);
+  answerGame(description, getQestionAndAnswer);
 };

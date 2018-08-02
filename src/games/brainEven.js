@@ -1,9 +1,9 @@
-import answerGame from '../gameEngines/AnswerGame';
+import answerGame from '../engine';
 
-const rules = 'Answer "yes" if number even otherwise answer "no".';
+const description = 'Answer "yes" if number even otherwise answer "no".';
+const isEven = num => num % 2 === 0;
 
-const questionPair = () => {
-  const isEven = num => num % 2 === 0;
+const getQestionAndAnswer = () => {
   const number = Math.floor(Math.random() * 100);
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   const question = number.toString();
@@ -11,5 +11,5 @@ const questionPair = () => {
 };
 
 export default () => {
-  answerGame(rules, questionPair);
+  answerGame(description, getQestionAndAnswer);
 };

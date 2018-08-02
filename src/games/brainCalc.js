@@ -1,9 +1,9 @@
-import answerGame from '../gameEngines/AnswerGame';
-import { random } from '..';
+import answerGame from '../engine';
+import random from '../utils';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const questionPair = () => {
+const getQestionAndAnswer = () => {
   const arithmetic = [
     ['+', (a, b) => a + b],
     ['-', (a, b) => a - b],
@@ -19,5 +19,5 @@ const questionPair = () => {
 };
 
 export default () => {
-  answerGame(rules, questionPair);
+  answerGame(description, getQestionAndAnswer);
 };
