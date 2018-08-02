@@ -20,7 +20,7 @@ export default (rules, questionPair) => {
   };
 
   for (let i = 0; i < numOfRounds; i += 1) {
-    if (!round(questionPair)) return;
+    if (!round(questionPair())) return;
   }
 
   console.log(`Congratulations, ${playerName}!`);
