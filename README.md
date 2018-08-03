@@ -16,7 +16,7 @@ Here you can find a small kit of games you can play with console.
 ```bash
 $ npm install -g hexlet_pr_1_second_attempt
 ```
-<a name="even">###Even</a>
+<a name="even">### Even</a>
 1. This is the simpliest game in this collection. Just for start.
 Let's check if you know how to recognize even number:)
 ```bash
