@@ -2,13 +2,13 @@ import answerGame from '../engine';
 import generateNumber from '../utils';
 
 const description = 'What is the result of the expression?';
+const arithmetic = [
+  ['+', (a, b) => a + b],
+  ['-', (a, b) => a - b],
+  ['*', (a, b) => a * b],
+];
 
 const getQestionAndAnswer = () => {
-  const arithmetic = [
-    ['+', (a, b) => a + b],
-    ['-', (a, b) => a - b],
-    ['*', (a, b) => a * b],
-  ];
   const a = generateNumber();
   const b = generateNumber();
   const operation = arithmetic[generateNumber(0, 2)];

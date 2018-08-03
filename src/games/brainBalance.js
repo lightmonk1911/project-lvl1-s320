@@ -2,10 +2,7 @@ import answerGame from '../engine';
 import generateNumber from '../utils';
 
 const description = 'Balance the given number.';
-
-const getQestionAndAnswer = () => {
-  const number = generateNumber(0, 1000);
-  const arrayOfDigits = Array.from(number.toString()).map(digit => Number(digit));
+const balance = (arrayOfDigits) => {
   const sum = arrayOfDigits.reduce((acc, digit) => digit + acc, 0);
   const average = sum / arrayOfDigits.length;
   const small = Math.floor(average);
@@ -16,7 +13,14 @@ const getQestionAndAnswer = () => {
   for (let i = 0; i < arrayOfDigits.length; i += 1) {
     newArray.push(i < countOfSmall ? small : big);
   }
-  return [arrayOfDigits.join(''), newArray.join('')];
+  return newArray;
+};
+
+const getQestionAndAnswer = () => {
+  const number = generateNumber(0, 1000);
+  const arrayOfDigits = Array.from(number.toString()).map(digit => Number(digit));
+  const balancedArray = balance(arrayOfDigits);
+  return [arrayOfDigits.join(''), balancedArray.join('')];
 };
 
 export default () => answerGame(description, getQestionAndAnswer);
