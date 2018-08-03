@@ -23,6 +23,7 @@ Let's check if you know how to recognize even number:)
 $ brain-even
 ```
 ![screencast from game](img/even.gif)
+[Get back to contents](#the-brain-games)
 ### Calculator
 Everything is comletely simple. Just calculate it. 
 P.S. It was joke about simple:)
@@ -30,12 +31,14 @@ P.S. It was joke about simple:)
 $ brain-calc
 ```
 ![screencast from game](img/calc.gif)
+[Get back to contents](#the-brain-games)
 ### Greater common divisor
 Did you like math in your childhood? Here you have to remember what is greater common divisor.
 ```bash
 $ brain-gcd
 ```
 ![screencast from game](img/gcd.gif)
+[Get back to contents](#the-brain-games)
 ### Balance
 Balance the given number. Number is balanced when the difference between biggest and smallest digit of number is less than 2. To balance number we take 1 from biggest and give it to smallest digit and repeat while number is unbalanced. After that you should sort digits of number and enter your answer.
 For example 2691 => 2682 => 2673 => 3663 => 4563 => 4554 => 4455.
@@ -44,15 +47,18 @@ It's more difficult to explain than to resolve.
 $ brain-balance
 ```
 ![screencast from game](img/balance.gif)
+[Get back to contents](#the-brain-games)
 ### Progression
 Find missing number. Without calculator. It's brain games, not finger training.
 ```bash
 $ brain-progression
 ```
 ![screencast from game](img/progression.gif)
+[Get back to contents](#the-brain-games)
 ### Prime
 Prime numbers has two different natural divisors. No less, no more. Use tips from school. Build new neural connections in your intraparietal sulcus(or somewhere else).
 ```bash
 $ brain-prime
 ```
 ![screencast from game](img/prime.gif)
+[Get back to contents](#the-brain-games)
