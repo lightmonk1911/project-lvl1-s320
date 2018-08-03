@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainBalance from '../games/brainBalance';
+import brainBalance from '../games/balance';
 
 brainBalance();
