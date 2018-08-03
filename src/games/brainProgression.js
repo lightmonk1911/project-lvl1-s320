@@ -4,7 +4,7 @@ import generateNumber from '../utils';
 const description = 'What number is missing in this progression?';
 const progressionLength = 10;
 
-const getQestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const startNumber = generateNumber();
   const step = generateNumber();
   const progression = [];
@@ -19,6 +19,4 @@ const getQestionAndAnswer = () => {
   return [progression.join(' '), answer];
 };
 
-export default () => {
-  answerGame(description, getQestionAndAnswer);
-};
+export default () => answerGame(description, getQuestionAndAnswer);

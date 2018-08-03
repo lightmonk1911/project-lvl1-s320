@@ -16,11 +16,11 @@ const balance = (arrayOfDigits) => {
   return newArray;
 };
 
-const getQestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const number = generateNumber(0, 1000);
   const arrayOfDigits = Array.from(number.toString()).map(digit => Number(digit));
   const balancedArray = balance(arrayOfDigits);
   return [arrayOfDigits.join(''), balancedArray.join('')];
 };
 
-export default () => answerGame(description, getQestionAndAnswer);
+export default () => answerGame(description, getQuestionAndAnswer);

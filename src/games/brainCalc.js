@@ -8,7 +8,7 @@ const arithmetic = [
   ['*', (a, b) => a * b],
 ];
 
-const getQestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const a = generateNumber();
   const b = generateNumber();
   const operation = arithmetic[generateNumber(0, 2)];
@@ -18,6 +18,4 @@ const getQestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => {
-  answerGame(description, getQestionAndAnswer);
-};
+export default () => answerGame(description, getQuestionAndAnswer);

@@ -11,12 +11,10 @@ const isPrime = (number) => {
   return true;
 };
 
-const getQestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const number = generateNumber();
-  const answer = isPrime(number) ? 'yes' : 'no';
-  return [number.toString(), answer];
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  return [number.toString(), correctAnswer];
 };
 
-export default () => {
-  answerGame(description, getQestionAndAnswer);
-};
+export default () => answerGame(description, getQuestionAndAnswer);

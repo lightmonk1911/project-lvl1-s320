@@ -12,7 +12,7 @@ const gcd = (a, b) => {
   return min / i;
 };
 
-const getQestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const a = generateNumber();
   const b = generateNumber();
   const question = `${a} ${b}`;
@@ -20,6 +20,4 @@ const getQestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => {
-  answerGame(description, getQestionAndAnswer);
-};
+export default () => answerGame(description, getQuestionAndAnswer);
