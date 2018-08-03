@@ -1,8 +1,8 @@
-<a name="begin"># The brain-games.</a>
+# The brain-games
 Here you can find a small kit of games you can play with console. 
 1. [Is number even?](#even)
 2. [Calculate the value of the expression.](#calculator)
-3. [Find greater common divisor of two numbers.](#greater common divisor)
+3. [Find greater common divisor of two numbers.](#gcd)
 4. [Balance the number.](#balance)
 5. [Insert the missing number in arithmetic progression.](#progression)
 6. [Is number prime?](#prime)
@@ -30,7 +30,7 @@ P.S. It was joke about simple:)
 $ brain-calc
 ```
 ![screencast from game](img/calc.gif)
-### Greater common divisor
+[#gcd]### Greater common divisor
 Did you like math in your childhood? Here you have to remember what is greater common divisor.
 ```bash
 $ brain-gcd
