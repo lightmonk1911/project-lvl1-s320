@@ -4,10 +4,9 @@ import generateNumber from '../utils';
 const description = 'Is this number prime? Say "yes" or "no"';
 const isPrime = (number) => {
   if (number < 2) return false;
-  let i = 2;
-  while (i <= number / i) {
+  const limit = number ** 0.5;
+  for (let i = 2; i <= limit; i += 1) {
     if (number % i === 0) return false;
-    i += 1;
   }
   return true;
 };
